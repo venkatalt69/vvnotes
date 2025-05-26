@@ -7,3 +7,4 @@ vvblog is a completely responsive personal blog website that is compatible with 
 ## License
 
 This project is **free to use** and does not contains any license and Don't Forget to give credit.
+thanks to codingstella
