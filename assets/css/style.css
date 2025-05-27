@@ -1059,23 +1059,24 @@ footer .wrapper { text-align: center; }
 }
 @media (max-width: 549px) {
   :root {
-    /* Adjust typography for small screens */
-    --fs-base: 0.75rem;  /* smaller base font */
+    --fs-base: 0.75rem;
     --fs-1: 1.5rem;
     --fs-2: 1.25rem;
     --fs-3: 1rem;
   }
 
-  /* Make sure containers have some side padding */
   .container {
     padding: 0 10px;
   }
 
-  /* Stack any flex rows vertically for better mobile */
   .navbar {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
   }
 
   .hero .btn-group {
@@ -1083,20 +1084,17 @@ footer .wrapper { text-align: center; }
     gap: 10px;
   }
 
-  /* Make buttons full width for easier tapping */
   .btn {
     width: 100%;
     min-width: auto;
   }
 
-  /* Adjust margins for blog cards */
   .blog-card {
-    grid-template-columns: 1fr !important; /* stack content vertically */
+    grid-template-columns: 1fr !important;
   }
 
-  /* Show hero right image on mobile if needed */
+  /* THIS HIDES THE PICTURE ON MOBILE */
   .hero .right {
-    display: block;
-    margin-top: 20px;
+    display: none;
   }
 }
